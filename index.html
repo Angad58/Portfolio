@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/bf2b1009f8.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id = "header">
+        <div class = container>
+            <nav>
+                <img src = "Images\logo.png" class = "logo">
+                <ul id="sidemenu">
+                    <li><a href = "#header">Home</a></li>
+                    <li><a href = "#about">About</a></li>
+                    <li><a href = "#portfolio">Portfolio</a></li>
+                    <li><a href = "#contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closeMenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars"onclick="openMenu()" ></i>
+                 
+            </nav>
+            <div class = "header-content" >
+                <p> UI/UX Designer</p>
+                <h1>Hi I am <span>Angad</span>, student <br>at University of Lethbridge</h1>
+            </div>
+        </div>
+    </div>
+    <!-- -------------about---------------- -->
+    <div id = "about">
+        <div class = "container">
+            <div class = "row">
+                <div class = "about-col1">
+                    <img src = "Images\image.jpg">
+
+                </div>
+                <div class = "about-col2">
+                    <h1 class="abtxt">About me</h1>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Nesciunt deleniti quidem exercitationem commodi aliquam
+                        ut, mollitia excepturi. Commodi quis repudiandae nobis
+                        quibusdam iusto dignissimos nulla ratione asperiores, 
+                        in odio adipisci!
+                    </p>
+                    <div class="tab-titles ">
+                        <p class = "tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class = "tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class = "tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id = "skills">
+                        <ul>
+                            <li><span>UI/UX</span><br>Designing Web/App Interfaces</li>
+                            <li><span>HTML</span><br>Designing Web/App Interfaces</li>
+                            <li><span>CSS</span><br>Designing Web/App Interfaces</li>
+                            <li><span>JavaScript</span><br>Designing Web/App Interfaces</li>
+
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id = "experience">
+                        <ul>
+                            <li><span>ex</span><br><pre> ex</pre> </li>
+
+                        </ul>
+                    </div><div class="tab-contents" id = "education">
+                        <ul>
+                        <li><span>2021</span><br><pre> BSc. Computer Science at University Of Lethbridge</pre> </li>
+
+                        </ul>
+                        </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-----------------------------------portfolio------------------------------>
+<div id = "portfolio">
+    <div class="container">
+        <h1 class="abtxt">My Work</h1>
+        <div class="worklist">
+            <div class="work">
+                <img src="Images\worki.jpg">
+                <div class="layer">
+                    <h3>Web Game</h3>
+                    <p>UI/UX Design</p>
+                    <a href = #><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+                
+            </div>
+            <div class="work">
+                <img src="Images\worki.jpg">
+                <div class="layer">
+                    <h3>Web Game</h3>
+                    <p>UI/UX Design</p>
+                    <a href = #><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+                <div class="work">
+                <img src="Images\worki.jpg">
+                <div class="layer">
+                    <h3>Web Game</h3>
+                    <p>UI/UX Design</p>
+                    <a href = #><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="btn">See more</a>
+    </div>
+</div>
+
+<!-- ----------------------contact----------------------->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="abtxt">Contact Me</h1>
+                <p><i class="fa-solid fa-envelope"></i>singhangadpal05@gmail.com</p>
+                <p><i class="fa-solid fa-phone"></i>5872578384</p>
+                <div class="social-icons">
+                    <a href="https://www.linkedin.com/in/angad-pal-singh-b7bb54278" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+                <a href="Images/cv.pdf" download class="btn btn2">Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form>
+                    <input type="text" name="Name" placeholder="Your name" required>
+                    <input type="text" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows = "6" placeholder="Your Message"></textarea>
+                    <button type="submit"class= "btn btn2"> submit</button>
+
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Created by Angad Pal Singh ©</p>
+    </div>
+</div>
+<script>
+
+    var tablinks = document.getElementsByClassName('tab-links');
+    var tabcontents = document.getElementsByClassName('tab-contents');
+
+    function opentab(tabName){
+        for(tablink of tablinks){
+            tablink.classList.remove('active-link');
+        }
+    
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove('active-tab');
+        }
+        event.currentTarget.classList.add('active-link');
+        document.getElementById(tabName).classList.add('active-tab');
+    }
+    
+    
+</script>
+<script>
+    var sideMenu = document.getElementById('sidemenu');
+    function openMenu(){
+        sideMenu.style.right = '0';
+    }
+    function closeMenu(){
+        sideMenu.style.right = '-200px';
+    }
+</script>
+</body>
+</html>
