@@ -251,7 +251,7 @@ font: 14px;
     transition: transform 0.5s;
 }
 .social-icons a:hover{
-    color: #ff004f;
+    color: #1079be;
     transform: translateY(-5px);
 }
 .btn.btn2{
