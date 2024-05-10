@@ -11,7 +11,7 @@ body{
 #header {
     width: 100%;
     height: 100vh;
-    background-image: url(Images/portrait.png);
+    background-image: url(Images/prt.png);
     background-size: cover;
     background-position: center;
     
@@ -50,7 +50,7 @@ nav ul li a::after{
     content: '';
     width: 0;
     height : 3px;
-    background: #ff004f;
+    background: #9e4cbe;
     position : absolute;
     left: 0;
     bottom: -6px;
@@ -70,7 +70,7 @@ nav ul li a:hover::after {
     font-size: 60px;
 }
 .header-content span{
-    color: #ff004f;
+    color: #9e4cbe;
 }
 
 /* ------------------------about---------------------- */
@@ -118,7 +118,7 @@ nav ul li a:hover::after {
     content: '';
     width: 0;
     height: 3px;
-    background: #ff004f;
+    background: #9e4cbe;
     position: absolute;
     left: 0;
     bottom: -8px;
@@ -134,7 +134,7 @@ nav ul li a:hover::after {
     margin: 10px 0;
 }
 .tab-contents ul li span{
-color: #b54769;
+color: #764a88;
 font: 14px;
 }
 .tab-contents {
@@ -143,12 +143,18 @@ font: 14px;
 .tab-contents.active-tab{
     display: block;
 }
+.tab-contents i{
+    color: #8e7d96;
+    margin-right: 10px;
+
+}
 /* ------------------------portfolio---------------------- */
 #portfolio {
     padding: 50px 0;
     color: #fff;
 }
 .worklist {
+    width: 40%;
     display: grid;
     grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
     grid-gap: 40px;
@@ -168,7 +174,7 @@ font: 14px;
 .layer{
     width: 100%;
     height: 0;
-    background: linear-gradient(150deg, rgba(23, 47, 70, 0.6),#ff004f);
+    background: linear-gradient(150deg, rgba(23, 47, 70, 0.6),#9e4cbe);
     border-radius: 10px;
     position: absolute;
     left: 0;
@@ -189,7 +195,7 @@ font: 14px;
 }
 .layer a{
     margin-top: 20px;
-    color: #ff004f;
+    color: #9e4cbe;
     text-decoration: none;
     line-height: 60px;
     font-size: 18px;
@@ -211,14 +217,14 @@ font: 14px;
     display: block;
     margin: 50px auto;
     width: fit-content;
-    border : 1px solid #89002c;
+    border : 1px solid #7a108a;
     padding: 14px 50px;
     border-radius: 6px;
     text-decoration: none;
     color: #fafafa;
 }
 .btn:hover{
-    background: #c61760a5;
+    background: #512961c0;
     transition: 0.6s;
 }
 /* ---------------------------------contact---------------------- */
@@ -234,7 +240,7 @@ font: 14px;
     margin-top: 30px;
 }
 .contact-left p i{
-    color: #ff004f;
+    color: #9e4cbe;
     margin-right: 15px;
     font-size: 25px;
 }
@@ -256,7 +262,7 @@ font: 14px;
 }
 .btn.btn2{
     display: inline-block;
-    background: #ff004f;
+    background: #9e4cbe;
     cursor: pointer;
     font-weight: 600;
     box-shadow: inset 0 -8px 0 0 rgba(0, 0, 0, 0.2);
@@ -318,7 +324,7 @@ nav .fa-solid{
         display: block;
     }
     nav ul{
-        background: #ff004f;
+        background: #9e4cbe;
         position: fixed;
         top: 0;
         right: -200px;;
@@ -367,6 +373,13 @@ nav .fa-solid{
         margin-top: -5px;
         
     }
-    
+    #header{
+        background-image: url();
+    }
+    .about-col1{
+       content: url();
+        
+    }
+   
 
 }
